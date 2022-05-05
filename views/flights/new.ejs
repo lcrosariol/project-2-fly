@@ -1,0 +1,26 @@
+<%- include('../partials/header') %>
+
+<form id="new-form" action="/flights" method="POST">
+  <label>DEPARTURE:</label>
+  <input type="text" name="departure">
+  <label>ARRIVAL:</label>
+  <input type="text" name="arrival">
+  <label>VFR/IFR</label>
+  <select name="vfrOrIfr">
+    <option value="VFR">VFR</option>
+    <option value="MVFR">MVFR</option>
+    <option value="IFR">IFR</option>
+    <option value="CANCELLED DUE TO WEATHER">CANCELLED DUE TO WEATHER</option>
+  </select>
+  <label>DESTINATION HAS FUEL?</label>
+  <input type="checkbox" name="destinationHasFuel" checked>
+  <input type="submit" value="ADD FLIGHT">
+</form>
+<p></p>
+<p></p>
+<a href="https://skyvector.com/" target="_blank">SkyVector</a>
+<a href="https://e6bx.com/weight-balance/" target="_blank">Weight and Balance</a>
+<a href="https://e6bx.com/e6b/" target="_blank">E6B</a>
+<a href="https://e6bx.com/navlog/" target="_blank">NavLog</a>
+
+<%- include('../partials/footer') %>
