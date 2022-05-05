@@ -18,7 +18,7 @@ body {
 }
 
 body > nav {
-  grid-area: nav;
+  /* grid-area: nav; */
   background-color: #B8C0C2;
   display: flex;
   justify-content: flex-end;
@@ -26,13 +26,13 @@ body > nav {
   padding: 0 20px 0 30px;
 }
 a.login {
-  max-width: 50%;
+  max-width: 5%;
   
 }
 
 a > img {
-  max-width: 4%;
-  max-height: 4%;
+  max-width: 40%;
+  max-height: 40%;
 }
 nav > img {
   width: 34px;
@@ -50,7 +50,7 @@ body > main {
   /* overflow-y: scroll; */
   width: 60%;
 }
-
+/* 
 body > main h1:first-child {
   margin-bottom: 50px;
 }
@@ -65,13 +65,17 @@ nav > a {
 nav > a:hover {
   color: white;
   background-color: #424748;
-  max-width: 4%;
+  background-size: auto;
 }
 /* top links */
 nav > a.active {
   color: white;
   cursor: default;
-}
+} */
+
+/* .links {
+  text-align: left;
+} */
 
 #new-form {
   display: grid;
