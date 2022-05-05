@@ -1,24 +1,29 @@
 * {
-  box-sizing: border-box;
+
   font-family: Helvetica;
   color: #424748;
 }
 
+main {
+    margin:0vh, 0vh, 0vh, 100vh;
+}
+
 body {
-  background-image: url('/Screen\ Capture\ 003\ -\ SkyVector_\ Flight\ Planning\ _\ Aeronautical\ Charts\ -\ skyvector.com.jpg');
-  background-position: 50% 50%;
-  background-repeat: repeat;
-  margin: 0;
+  background-image: url(imgur.com/1TGZFfm);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: pink; */
   height: 100vh;
   display: grid;
   grid-template-rows: 50px 1fr;
   grid-template-areas: 
-    "nav"
-    "main"
+    "nav" 
+    "main" 
 }
 
 body > nav {
-  /* grid-area: nav; */
+  grid-area: nav;
   background-color: #B8C0C2;
   display: flex;
   justify-content: flex-end;
@@ -39,8 +44,9 @@ nav > img {
   object-fit: contain; 
   margin-right: auto; 
 }
-
+/* grey behind text area*/
 body > main {
+  padding-left: 30px;
   grid-area: main;
   display: flex;
   flex-direction: column;
@@ -50,13 +56,13 @@ body > main {
   /* overflow-y: scroll; */
   width: 60%;
 }
-/* 
+
 body > main h1:first-child {
   margin-bottom: 50px;
 }
 /* links on nav bar*/
 nav > a {
-  margin: 20px;
+margin: 20px;
   text-decoration: none;
   padding: 10px;
   border-radius: 5px;
@@ -73,9 +79,9 @@ nav > a.active {
   cursor: default;
 } */
 
-/* .links {
+.links {
   text-align: left;
-} */
+}
 
 #new-form {
   display: grid;
@@ -167,7 +173,7 @@ hr {
 /*continer that holds the enroute airports added to list*/
 #badge-container {
   display: flex;
-  /* padding: 1rem; */
+  padding: 1rem;
   width: 80%;
   border: 2px solid #B8C0C2;
   border-radius: .5rem;
