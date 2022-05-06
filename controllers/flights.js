@@ -19,7 +19,6 @@ function show(req, res) {
   Flight.findById(req.params.id)
     .populate("airport")
     .exec(function (err, flight) {
-      // Native MongoDB syntax
       Enroute.find({ _id: { $nin: flight.airport } })
         .sort("enrouteAlternate")
         .exec(function (err, enroutes) {
@@ -37,9 +36,7 @@ function newFlight(req, res) {
 }
 
 function create(req, res) {
-  // convert nowShowing's checkbox of nothing or "on" to boolean
   req.body.destinationHasFuel = !!req.body.destinationHasFuel;
-  // ensure empty inputs are removed so that model's default values will work
   for (let key in req.body) {
     if (req.body[key] === "") delete req.body[key];
   }
@@ -49,8 +46,3 @@ function create(req, res) {
     res.redirect(`/flights/${flight._id}`);
   });
 }
-// const wx = new Wx(req.body);
-// wx.save(function (err){
-//   if (err) return res.redirect("/flights/new");
-//   res.redirect(`/flights/${wx._id}`);                                                 ///////////                           
-// });

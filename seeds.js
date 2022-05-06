@@ -3,25 +3,6 @@ const Flight = require('./models/flight');
 const Enroute = require('./models/enroute');
 const data = require('./data');
 
-// Flight.deleteMany({}).then(
-//     function (res){
-//         console.log(res);
-//         process.exit();
-//     }
-// );
-
-// Flight.deleteMany({})
-//     .then(function(results) {
-//         console.log('Deleted flights: ', results);
-//         return Enroute.deleteMany({});
-//     })
-//     .then(function(results) {
-//         console.log('Deleted enroutes:', results);
-//     })
-//     .then(function() {
-//         process.exit();
-//     });
-
 const p1 = Flight.deleteMany({});
 const p2 = Enroute.deleteMany({});
 
@@ -43,7 +24,7 @@ Promise.all([p1, p2])
     .then(function (results){
         const mark = results[0];
         const starWars = results[1];
-        starWars.airport.push(mark); // here we need the id from MongoDB document
+        starWars.airport.push(mark); 
         return starWars.save();
     })
     .then(function (){

@@ -1,7 +1,7 @@
-const Weather = require("../weather");
+// const Weather = require("../weather");
 
-module.exports = {
+// module.exports = {
 
-};
+// };
 
 

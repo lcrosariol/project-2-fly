@@ -9,16 +9,13 @@
   <div><%= flight.vfrOrIfr %></div>
   <div>DESTINATION HAS FUEL? </div>
   <div><%= flight.destinationHasFuel ? 'Yes' : 'No' %></div>
-  <!-- start airport list -->
   <div>ENROUTE/ALTERNATES:</div>
   <ul>
     <%- flight.airport.map(p => 
       `<li>${p.enrouteAlternate} <small>${p.eta}</small></li>`
     ).join('') %>
   </ul>
-  <!-- end airport list -->
 </section>
-<!-- add to airport form below this comment -->
 <form id="add-per-to-airport" action="/flights/<%= flight._id %>/enroutes" method="POST">
   <select name="enrouteId">
     <%- enroutes.map(p => 

@@ -2,7 +2,6 @@ const express = require("express");
 const router = express.Router();
 const flightsCtrl = require("../controllers/flights");
 
-// this auth will lock all your URLS
 const isLoggedIn = require("../config/auth");
 
 router.get("/", flightsCtrl.index);
