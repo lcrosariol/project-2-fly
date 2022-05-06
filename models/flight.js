@@ -23,7 +23,6 @@ const flightSchema = new Schema(
     arrival: {
       type: String,
       required: true,
-      
     },
     vfrOrIfr: String,
     airport: [

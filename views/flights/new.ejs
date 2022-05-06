@@ -2,11 +2,11 @@
 
 <form id="new-form" action="/flights" method="POST">
   <label>DEPARTURE:</label><p></p>
-  <input type="text" name="departure"><p></p>
+  <input type="text" name="departure" style="width:300px;"><p></p>
   <label>ARRIVAL:</label><br>
-  <input type="text" name="arrival"><p></p>
+  <input type="text" name="arrival" style="width:300px;"><p></p>
   <label>VFR/IFR:</label>
-  <select name="vfrOrIfr">
+  <select name="vfrOrIfr" style="width:100px;">
     <option value="VFR">VFR</option>
     <option value="MVFR">MVFR</option>
     <option value="IFR">IFR</option>
@@ -14,7 +14,7 @@
   </select><br><p></p>
   <label>DESTINATION HAS FUEL?</label>
   <input type="checkbox" name="destinationHasFuel" checked><br>
-  <input type="submit" value="ADD FLIGHT">
+  <input type="submit" style="width:300px;" value="ADD FLIGHT">
 </form>
 <br><p></p>
 <h3 class="links">Here are some helpful planning links:</h3>

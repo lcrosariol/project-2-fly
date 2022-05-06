@@ -187,18 +187,23 @@ hr {
   display: flex;
   padding: 1rem;
   width: 80%;
-  border: 2px solid #B8C0C2;
+  border: 6px  rgba(50,114,163);
+  border-style: dashed;
   border-radius: .5rem;
   margin: .5rem 0 2rem;
+  z-index: 0;
 }
 /*cell inside the badge*/
 .badge {
-  background-color: #B8C0C2;
+  background-image: radial-gradient(circle, rgba(145,43,89,0.0000004), rgba(145,43,89,2));
   padding: .5rem;
   margin: 1rem;
-  border-radius: .3rem;
-  font-size: .8rem;
-  text-align: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 1rem;
+  text-align: justify;
+  z-index: 2;
 }
 
 .review-user {
