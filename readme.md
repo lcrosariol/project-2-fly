@@ -8,7 +8,7 @@ CSS was definitely a win.  CRUD was a challenge.  I learned a lot about all of t
 
 ![Google OAuth](/All-Flights.png)
 
-[Github](https://github.com/lcrosariol/GA-Project-2)
+[Github](https://github.com/lcrosariol/project-2-fly)
 
 [ERD](https://lucid.app/lucidchart/a578dde6-8f8f-4bba-bde5-5c21f37606ce/edit?invitationId=inv_65e1d062-856e-41c4-b663-b8ada4d98199)
 
