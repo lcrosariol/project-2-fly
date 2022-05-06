@@ -15,7 +15,7 @@ body {
   background-size: cover;
   border-radius: 5px;
   /* background-color: pink; */
-  height: 100vh;
+  height: 140vh;
   /* display: grid; */
   /* grid-template-rows: 50px 1fr; */
   grid-template-areas: 
@@ -24,8 +24,7 @@ body {
 }
 
 body > nav {
-  grid-area: nav;
-  color: #a2ad09;
+  /* grid-area: nav; */
   background-color: #2f3030de;
   display: flex;
   border: 5px solid darkslategrey;
@@ -60,11 +59,11 @@ body > main {
   align-items: center;
   background-color: #979b9be0;
   line-height: 1.3;
-  /* filter: blur(8px); */
+
   
   /* overflow-y: scroll; */
   width: 70.5vw;
-  height: 80vh;
+  height: 100vh;
   border: 5px solid darkslategrey;
   border-top: 0px;
 }
@@ -74,20 +73,21 @@ body > main h1:first-child {
 }
 /* links on nav bar*/
 nav > a {
-margin: 20px;
+  color: #979506;
+  margin: 20px;
   text-decoration: none;
   padding: 10px;
   border-radius: 5px;
 }
 /* hover over links*/
 nav > a:hover {
-  color: white;
-  background-color: #424748;
+  color: rgb(242, 245, 89);
+  background-color: #2d2f30;
   background-size: auto;
 }
 /* top links */
 nav > a.active {
-  color: white;
+  color: rgb(237, 248, 89);
   cursor: default;
 } */
 
