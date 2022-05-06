@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 const enrouteSchema = new Schema(
   {
     enrouteAlternate: { type: String, required: true, unique: true },
-    eta: Date,
+    eta: Date,  
   },
   {
     timestamps: true,

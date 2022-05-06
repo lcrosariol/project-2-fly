@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 const reviewSchema = new Schema(
   {
     remarks: { type: String, required: true },
-    procedures: { type: String, required: true },
+    procedures: { type: String, required: false },
     user: { type: Schema.Types.ObjectId, ref: "User" },
     userName: String,
     userAvatar: String,

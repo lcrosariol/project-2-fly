@@ -1,10 +1,10 @@
 <%- include('../partials/header') %>
 
 <form id="new-form" action="/flights" method="POST">
-  <label>DEPARTURE:</label><br>
-  <input type="text" name="departure"><br><p></p>
+  <label>DEPARTURE:</label><p></p>
+  <input type="text" name="departure"><p></p>
   <label>ARRIVAL:</label><br>
-  <input type="text" name="arrival"><br><p></p>
+  <input type="text" name="arrival"><p></p>
   <label>VFR/IFR:</label>
   <select name="vfrOrIfr">
     <option value="VFR">VFR</option>
@@ -13,10 +13,10 @@
     <option value="CANCELLED DUE TO WEATHER">CANCELLED DUE TO WEATHER</option>
   </select><br><p></p>
   <label>DESTINATION HAS FUEL?</label>
-  <input type="checkbox" name="destinationHasFuel" checked>
+  <input type="checkbox" name="destinationHasFuel" checked><br>
   <input type="submit" value="ADD FLIGHT">
 </form>
-<p></p>
+<br><p></p>
 <h3 class="links">Here are some helpful planning links:</h3>
 <ul>
   <li><a href="https://skyvector.com/" target="_blank">SkyVector</a></li>
